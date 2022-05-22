@@ -1,0 +1,34 @@
+{
+    "name": "electron-serialport",
+    "version": "1.0.2",
+    "description": "A minimal Electron application with node serialport",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "install": "electron-rebuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:serialport/electron-serialport.git"
+    },
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^13.1.6",
+        "electron-rebuild": "^3.2.5"
+    },
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "node-abi": "^3.5.0",
+        "serialport": "^9.2.0",
+        "spectre.css": "^0.5.9",
+        "tableify": "^1.1.0"
+    }
+}

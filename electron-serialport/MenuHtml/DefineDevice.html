@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="columns">
+        <div class="column col-4">
+            <label>Name</label><br><br>
+            <label>Device Protocol</label><br><br>
+            <label>Device Pin</label><br><br>
+            <label>COM Port</label><br><br>
+
+
+
+        </div>
+        <div class="column col-8">
+
+            <input id="name" type="text" style="width: 200px;"><br><br>
+
+            <select id="protocal" style="width: 150px;">
+                <option value="WS2812B No CLock">WS2812B</option>
+                <option value="Analog">Analog</option>
+                <option value="WS2812B with Clock">WS2812B with Clock</option>
+            </select><br><br>
+
+            <input id="pin" style="width: 50px;" type="number" max=13 min=0><br><br>
+
+            <input id="com" style="width: 50px;" type="number" max=13 min=0><br><br>
+
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+<button onclick="defineDevice()">Add Device</button>

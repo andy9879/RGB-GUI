@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        .MenuItem {
+            cursor: pointer;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: rgb(46, 46, 46);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(77, 77, 77);
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(158, 158, 158); overflow-y: scroll;">
+
+    <h2 style="box-shadow: 10px 2px 5px 12px grey; color: #fff; text-align: center; background-color: rgb(46, 46, 46); margin: 0; padding-bottom: 10px;">
+        <b>RGB NANO</b></h2>
+
+    <div style="height: 100%; " class="container">
+        <div style="height: 100%;" class="columns">
+            <div style="color:#fff; background-color: rgb(58, 58, 58); padding-top: 10px; box-shadow: 2px 20px 12px 10px grey;" class="column col-4">
+
+                <div class="MenuItem" onclick="menu(0)">Define Devices</div>
+                <hr>
+                <div class="MenuItem" onclick="menu(1)">Edit Devices</div>
+                <hr>
+                <div class="MenuItem" onclick="menu(2)">Settings</div>
+                <hr>
+                <div class="MenuItem" onclick="menu(3)">Profile</div>
+                <hr>
+
+
+            </div>
+            <div id="menu" class="column col-8" style="padding-top: 20px; padding-left: 30px; color: white; ">
+
+                <img style="width: 400px; margin: auto;" src="./icon.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./renderer.js"></script>
+
+</html>
